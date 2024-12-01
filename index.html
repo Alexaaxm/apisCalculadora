@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Apis</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Conversor de Monedas Nacional</h1>
+      <form onsubmit="onFormSubmit(event)" class="form-container">
+        <h3>Pesos CLP</h3>
+        <div class="form-information">
+          <input
+            type="number"
+            name="monto"
+            id="monto"
+            class="container-imput text"
+            required
+            placeholder="ingrese el monto en clp"
+          />
+        </div>
+        <h5>Moneda a convertir</h5>
+        <div class="form-information">
+          <select
+            value="Selecciona moneda"
+            name="moneda"
+            id="lang"
+            class="container-imput"
+            required
+          >
+            <option value="">Selecciona Moneda</option>
+            <option value="dolar">Dolar</option>
+            <option value="uf">UF</option>
+            <option value="euro">Euro</option>
+          </select>
+        </div>
+        <div class="form-information">
+          <input
+            type="submit"
+            value="Buscar"
+            class="container-imput button-color"
+          />
+        </div>
+        <h6 id="result">...</h6>
+      </form>
+    </main>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
